@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.Empiricial" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-07-28T03:20:28.351Z" hostname="DESKTOP-7DE8BJ4" time="21.211">
+  <properties/>
+  <testcase name="testSignUpButtonVisible" classname="tests.Empiricial" time="4.845"/>
+  <testcase name="testSearchInputVisible" classname="tests.Empiricial" time="13.681"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jul 28, 2025 8:50:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 28, 2025 8:50:28 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jul 28, 2025 8:50:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 28, 2025 8:50:35 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.20.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
