@@ -20,17 +20,15 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: Set up Gradle
-        uses: gradle/gradle-build-action@v2
-
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Run Tests
-        run: .\gradlew clean test
+      - name: Run Tests with Gradle
+        run: ./gradlew clean test --stacktrace
 
-      - name: Upload Test Reports
+      - name: Upload TestNG Reports
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-reports
+          name: testng-reports
           path: build/reports/tests/test
