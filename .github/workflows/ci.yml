@@ -1,10 +1,13 @@
 name: Selenium Test Automation
-
 on:
   push:
     branches:
       - main
   pull_request:
+  schedule:
+    # Run every 30 minutes
+    - cron: "*/30 * * * *"
+  workflow_dispatch: # allow manual trigger too
 
 jobs:
   test:
