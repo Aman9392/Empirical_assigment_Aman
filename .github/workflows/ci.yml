@@ -32,3 +32,6 @@ jobs:
         with:
           name: testng-reports
           path: build/reports/tests/test
+
+      - name: Run Tests with Gradle
+        run: ./gradlew clean test --stacktrace || true
