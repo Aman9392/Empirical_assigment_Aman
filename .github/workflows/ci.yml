@@ -25,11 +25,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
-      - name: Install ChromeDriver
-        run: |
-          sudo apt-get install -y chromium-chromedriver
-          sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
-
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
@@ -42,3 +37,4 @@ jobs:
         with:
           name: testng-reports
           path: build/reports/tests/test
+          if-no-files-found: ignore
