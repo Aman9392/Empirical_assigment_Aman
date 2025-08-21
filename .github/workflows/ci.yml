@@ -5,8 +5,8 @@ on:
       - main
   pull_request:
   schedule:
-    # Run every 30 minutes
-    - cron: "*/30 * * * *"
+    # Run every Morning 7 Am
+    - cron: "30 1 * * *"
   workflow_dispatch: # allow manual trigger too
 
 jobs:
